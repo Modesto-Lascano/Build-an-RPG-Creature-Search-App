@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Search App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        #search-input {
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 250px;
+            font-size: 16px;
+        }
+        #search-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #pokemon-info {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .pokemon-detail {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        #sprite {
+            margin-top: 20px;
+        }
+        #types {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pokémon Search App</h1>
+    <input id="search-input" type="text" placeholder="Enter Pokémon name or ID" required>
+    <button id="search-button">Search</button>
+
+    <div id="pokemon-info">
+        <div id="pokemon-name" class="pokemon-detail"></div>
+        <div id="pokemon-id" class="pokemon-detail"></div>
+        <div id="weight" class="pokemon-detail"></div>
+        <div id="height" class="pokemon-detail"></div>
+        <div id="hp" class="pokemon-detail"></div>
+        <div id="attack" class="pokemon-detail"></div>
+        <div id="defense" class="pokemon-detail"></div>
+        <div id="special-attack" class="pokemon-detail"></div>
+        <div id="special-defense" class="pokemon-detail"></div>
+        <div id="speed" class="pokemon-detail"></div>
+        <div id="types" class="pokemon-detail"></div>
+        <img id="sprite" src="" alt="" style="display: none;">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
